@@ -1,0 +1,20 @@
+* {
+    all: unset;
+}
+a {
+    color: black;
+    border: black 1px solid;
+    margin: 5px;
+    padding: 5px;
+}
+
+a:hover {
+    cursor: pointer;
+    color: gray;
+}
+.headtitle{
+    width: 100%;
+    text-align: center;
+}
+
+

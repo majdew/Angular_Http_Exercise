@@ -1,0 +1,31 @@
+<h1>Native Pipes</h1>
+
+<p>{{"Testpipe Works!"}}</p>
+
+<h2>String pipes</h2>
+<p>{{"testpipe works! -lowercase pipe" | lowercase}}</p>
+<p>{{"testpipe works! -uppercase " | uppercase}}</p>
+<p>{{"testpipe works! -titlecase" | titlecase}}</p>
+
+<h2>Date pipe</h2>
+<p>{{birthdate}}</p>
+<p>{{birthdate|date}}</p>
+<p>{{birthdate|date:'short'}}</p>
+<p>{{birthdate|date:'shortTime'}}</p>
+<p>{{birthdate|date:'shortDate'}}</p>
+
+<h2>number pipe</h2>
+<p>{{4.987 | number:'1.1-2'}}</p>
+<p>{{4.987 | number:'3.4'}}</p>
+<p>{{4.987 | number:'6.4-6'}}</p>
+
+<h2>percent pipe</h2>
+<p>{{0.25 | percent}}</p>
+
+<h2>Currency pipe</h2>
+<p>{{2500 | currency}}</p>
+<p>{{2500 | currency:'CAD':'code'}}</p>
+
+<h1>User defined  Pipe  "number square"</h1>
+<p>4 pow 2 ={{4|mypipe}}</p>
+

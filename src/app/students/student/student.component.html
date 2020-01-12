@@ -1,0 +1,11 @@
+<div class="student-element" >
+    <div [routerLink]="['/student' , student.id]">
+        <span> name: {{student.name}} </span>
+    </div>
+    <div>
+        <span> major: {{student.major}} </span>
+    </div>
+    <div class="color-div" [ngStyle]="{'background-color' : student.color}" (click)="sendColorHeaderTitle()"> </div>
+</div>
+
+

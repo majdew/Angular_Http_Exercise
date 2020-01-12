@@ -1,0 +1,6 @@
+<h2>New Student</h2>
+<app-addstudent (newStudentEvent)="insertStudentIntoList($event)" ></app-addstudent>
+<h2 [ngStyle]="{'color':fontcolor}">Students list</h2>
+<div *ngFor="let student of students">
+    <div app-student  [student]="student" (colorClickEvent)="fontcolor=$event"></div >
+</div>

@@ -1,0 +1,28 @@
+<form [formGroup]="profileForm" (ngSubmit)="saveStudent()">
+    <div class="form-div">
+        <div class="title-div" >Add Student</div>
+        <div class="input-div ">
+            <label for="name">name: </label>
+            <input  name="name"  formControlName="name" [ngClass]="{'error-input' : submitted && control.name.errors } " >
+            <div *ngIf="submitted && control.name.errors ">
+                <div class="error-class" *ngIf="submitted && control.name.errors.required">Name is required !</div>
+                <div class="error-class" *ngIf="submitted && control.name.errors.minlength">Name must be at least 4 characters !</div>
+            </div>
+        </div>
+        <div class="input-div">
+            <label for="major" > major: </label>
+            <input name="major"  formControlName="major" [ngClass]="{'error-input' : submitted && control.major.errors}">
+            <div *ngIf="submitted && control.major.errors ">
+                <div class="error-class" *ngIf="submitted && control.major.errors.required">Major is required !</div>
+            </div>
+        </div>
+        <div class="input-div">
+            <label for="color" > color: </label>
+            <input name="color"  formControlName="color">
+        </div>
+        <div class="button-div">
+            <button type ="submit" >Add</button>
+            <button type="reset" (click)="reset()" >Cancel</button>
+        </div>
+    </div>
+</form>

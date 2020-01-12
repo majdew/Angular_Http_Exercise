@@ -1,0 +1,16 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "ali",
+      "major": "CS",
+      "color": "red"
+    },
+    {
+      "id": 2,
+      "name": "ahmed",
+      "major": "CE",
+      "color": "green"
+    }
+  ]
+}

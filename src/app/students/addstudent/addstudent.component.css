@@ -1,0 +1,33 @@
+.title-div {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: solid 1px black;
+}
+
+.input-div {
+    margin : 10px;
+}
+
+button {
+    background-color: white;
+    border-style: none;
+    border: 1px black solid;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.error-class{
+    font-size: small;
+    color: red;
+}
+
+.error-input{
+    border: 1px red solid;
+}
